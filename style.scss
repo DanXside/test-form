@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 300px;
+    padding: 0 55px;
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+    }
+    &__flex-inputs {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-top: 30px;
+    }
+    &__email-wrap, &__text-wrap {
+        position: relative;
+        margin-top: 25px;
+    }
+    &__input-wrap {
+        position: relative;
+    }
+    input {
+        width: 232px;
+        height: 56px;
+        padding: 12px;
+        border: 1px solid #b9b9b9;
+        border-radius: 10px;
+        box-sizing: border-box;
+        &:focus {
+            outline: none;
+            border: 2px solid #1BB55C;
+        }
+    }
+    label {
+        position: absolute;
+        top: -8px;
+        left: 12px;
+        padding: 0 8px;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        color: #000000;
+        background: #ffffff;
+    }
+    textarea {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #b9b9b9;
+        resize: none;
+        padding: 15px;
+        &:focus {
+            outline: none;
+            border: 2px solid #1BB55C;
+        }
+    }
+    &__policy {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 25px;
+        color: #263238;
+        transition: 0.2s all;
+        a {
+            color: inherit;
+            &:hover {
+                color: #161718;
+            }
+        }
+    }
+    &__btn {
+        position: relative;
+        width: 205px;
+        height: 45px;
+        border-radius: 4px;
+        background-color: #1BB55C;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+        transition: 0.2s all;
+        &:hover {
+            transform: scale(1.2);
+            font-size: 18px;
+        }
+        &:focus {
+            background-color: #0f5f31;
+        }
+        &-wrap {
+            width: 205px;
+            margin: 0 auto;
+        }
+    }
+}
+
+input._error {
+    border-color: red;
+}
